@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, Search, ShoppingCart, X } from "lucide-react";
 import { useState } from "react";
@@ -19,16 +20,19 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/92 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link className="flex items-center gap-3" href="/" onClick={() => setOpen(false)}>
-          <span className="grid size-10 place-items-center rounded-md bg-[#0055a8] text-sm font-black text-white">
-            RT
+          <span className="relative block h-8 w-[154px] sm:w-[178px]">
+            <Image
+              alt="RO-TEA"
+              className="object-contain object-left"
+              fill
+              priority
+              sizes="(min-width: 640px) 178px, 154px"
+              src="/brand/rotea-logo.webp"
+            />
           </span>
-          <span className="leading-tight">
-            <span className="block text-lg font-black tracking-normal text-slate-950">
-              {site.brand.name}
-            </span>
-            <span className="hidden text-xs font-medium text-slate-500 sm:block">
-              Tehnička trgovina
-            </span>
+          <span className="sr-only">{site.brand.name} Tehnička trgovina</span>
+          <span className="hidden text-xs font-medium text-slate-500 lg:block">
+            Tehnička trgovina
           </span>
         </Link>
 

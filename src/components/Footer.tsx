@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 import site from "@/data/site.json";
@@ -9,10 +10,15 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.3fr_0.8fr_0.8fr] lg:px-8">
         <div>
           <div className="flex items-center gap-3">
-            <span className="grid size-10 place-items-center rounded-md bg-[#0055a8] text-sm font-black">
-              RT
+            <span className="relative block h-9 w-[190px]">
+              <Image
+                alt="RO-TEA"
+                className="object-contain object-left brightness-0 invert"
+                fill
+                sizes="190px"
+                src="/brand/rotea-logo.webp"
+              />
             </span>
-            <span className="text-xl font-black">{site.brand.name}</span>
           </div>
           <p className="mt-5 max-w-md text-sm leading-7 text-slate-300">
             {site.brand.tagline}

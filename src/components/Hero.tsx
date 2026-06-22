@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { ArrowRight, ShieldCheck, Truck } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/Button";
@@ -73,29 +74,38 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="hero-visual relative min-h-[420px] rounded-lg border border-slate-200 bg-slate-50 p-5 shadow-[0_28px_90px_rgba(15,23,42,0.12)]">
-          <div className="absolute inset-0 rounded-lg bg-[radial-gradient(circle_at_70%_20%,rgba(0,85,168,0.18),transparent_34%),linear-gradient(145deg,#ffffff,#f8fafc)]" />
-          <div className="relative grid h-full min-h-[380px] grid-rows-[1fr_auto] overflow-hidden rounded-md border border-white bg-white/70 p-5">
-            <div className="grid place-items-center">
-              <div className="relative size-56 rounded-lg bg-[#0055a8] shadow-[0_28px_70px_rgba(0,85,168,0.25)]">
-                <div className="absolute left-8 top-8 h-16 w-28 rounded-md bg-white/95" />
-                <div className="absolute bottom-9 left-8 h-8 w-36 rounded-md bg-slate-950/90" />
-                <div className="absolute right-8 top-20 grid size-20 place-items-center rounded-full bg-white text-lg font-black text-[#0055a8]">
-                  RT
-                </div>
-                <div className="absolute -right-9 bottom-10 h-24 w-12 rounded-md bg-amber-400 shadow-lg" />
+        <div className="hero-visual relative overflow-hidden rounded-lg border border-slate-200 bg-slate-50 shadow-[0_28px_90px_rgba(15,23,42,0.12)]">
+          <div className="relative aspect-[4/3] min-h-[360px] w-full md:min-h-[440px]">
+            <Image
+              alt="RO-TEA tehnička oprema: alat, rasvjeta, kabeli, sklopka i vodoinstalacijski elementi"
+              className="object-cover"
+              fill
+              priority
+              sizes="(min-width: 1024px) 560px, 100vw"
+              src="/hero/ro-tea-hero-equipment.png"
+            />
+            <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-white/90 to-transparent" />
+            <div className="absolute left-4 top-4 rounded-md border border-white/70 bg-white/88 px-4 py-3 shadow-[0_14px_40px_rgba(15,23,42,0.12)] backdrop-blur-md sm:left-6 sm:top-6">
+              <div className="relative h-7 w-[154px]">
+                <Image
+                  alt="RO-TEA"
+                  className="object-contain object-left"
+                  fill
+                  sizes="154px"
+                  src="/brand/rotea-logo.webp"
+                />
               </div>
+              <p className="mt-2 text-xs font-semibold text-slate-600">
+                Tehnička oprema za brzu kupnju
+              </p>
             </div>
-            <div className="grid gap-3 sm:grid-cols-3">
-              {["Alati", "Rasvjeta", "Pametna kuća"].map((item) => (
+            <div className="absolute bottom-4 left-4 right-4 grid gap-3 sm:grid-cols-3">
+              {["Alati", "Elektro materijal", "Rasvjeta"].map((item) => (
                 <div
-                  className="rounded-md border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-800"
+                  className="rounded-md border border-white/70 bg-white/88 p-3 text-sm font-semibold text-slate-800 shadow-[0_12px_34px_rgba(15,23,42,0.10)] backdrop-blur-md"
                   key={item}
                 >
                   {item}
-                  <span className="mt-2 block h-1.5 w-full rounded-full bg-slate-100">
-                    <span className="block h-1.5 w-2/3 rounded-full bg-[#0055a8]" />
-                  </span>
                 </div>
               ))}
             </div>
