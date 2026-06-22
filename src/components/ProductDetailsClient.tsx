@@ -14,6 +14,13 @@ import type { Product } from "@/types/product";
 export function ProductDetailsClient({ product }: { product: Product }) {
   const [quantity, setQuantity] = useState(1);
   const addItem = useCartStore((state) => state.addItem);
+  const inStock = product.stockStatus !== "outofstock" && product.stock !== 0;
+  const secondaryGallery = product.gallery
+    .filter((item) => item !== product.image)
+    .slice(0, 2);
+  const description =
+    product.description ||
+    "Detalji proizvoda trenutno nisu dostupni. Kontaktirajte nas za više informacija.";
 
   return (
     <div className="grid gap-10 lg:grid-cols-[1fr_0.86fr] lg:items-start">
@@ -23,9 +30,10 @@ export function ProductDetailsClient({ product }: { product: Product }) {
           className="aspect-[5/4] border border-slate-200"
           image={product.image}
           name={product.name}
+          priority
         />
         <div className="grid gap-4 sm:grid-cols-2">
-          {product.gallery.slice(0, 2).map((item, index) => (
+          {secondaryGallery.map((item, index) => (
             <ProductVisual
               category={product.category}
               className="aspect-[5/3] border border-slate-200"
@@ -40,33 +48,38 @@ export function ProductDetailsClient({ product }: { product: Product }) {
       <div className="rounded-lg border border-slate-200 bg-white p-6 md:p-8">
         <div className="mb-5 flex flex-wrap items-center gap-3">
           {product.badge ? <Badge>{product.badge}</Badge> : null}
-          <Badge tone={product.stock > 0 ? "green" : "slate"}>
-            {formatStock(product.stock)}
+          <Badge tone={inStock ? "green" : "slate"}>
+            {formatStock(product.stock, product.stockStatus)}
           </Badge>
         </div>
         <h1 className="text-4xl font-semibold tracking-normal text-slate-950 md:text-5xl">
           {product.name}
         </h1>
+        <div className="mt-4 flex flex-wrap gap-3 text-sm text-slate-500">
+          {product.brand ? <span>Brend: {product.brand}</span> : null}
+          {product.sku ? <span>SKU: {product.sku}</span> : null}
+          {product.type === "variable" ? <span>Varijabilni proizvod</span> : null}
+        </div>
         <p className="mt-5 text-lg leading-8 text-slate-600">{product.shortDescription}</p>
         <div className="mt-7">
           <PriceDisplay oldPrice={product.oldPrice} price={product.price} size="lg" />
         </div>
-        <p className="mt-7 leading-7 text-slate-700">{product.description}</p>
+        <p className="mt-7 whitespace-pre-line leading-7 text-slate-700">{description}</p>
 
         <div className="mt-8 flex flex-col gap-4 border-t border-slate-200 pt-6 sm:flex-row sm:items-center">
           <QuantitySelector
-            max={Math.max(product.stock, 1)}
+            max={Math.max(product.stock ?? 99, 1)}
             onChange={setQuantity}
             value={quantity}
           />
           <Button
             className="w-full sm:flex-1"
-            disabled={product.stock <= 0}
+            disabled={!inStock}
             onClick={() => addItem(product, quantity)}
             size="lg"
           >
             <ShoppingCart aria-hidden="true" size={20} />
-            Dodaj u košaricu
+            {product.price > 0 ? "Dodaj u košaricu" : "Dodaj upit u košaricu"}
           </Button>
         </div>
 

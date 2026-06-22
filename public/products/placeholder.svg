@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="675" viewBox="0 0 900 675" role="img" aria-labelledby="title desc">
+  <title id="title">RO-TEA placeholder slika proizvoda</title>
+  <desc id="desc">Neutralna zamjenska slika za proizvod bez fotografije.</desc>
+  <rect width="900" height="675" fill="#f8fafc"/>
+  <path d="M110 515C203 406 276 442 370 336C456 239 538 153 790 104" fill="none" stroke="#0055a8" stroke-opacity=".16" stroke-width="34" stroke-linecap="round"/>
+  <rect x="305" y="205" width="290" height="210" rx="18" fill="#fff" stroke="#dbe3ee" stroke-width="2"/>
+  <rect x="354" y="252" width="192" height="90" rx="10" fill="#e7f0fb"/>
+  <path d="M393 315l43-45 34 34 20-20 58 61H353z" fill="#0055a8" fill-opacity=".76"/>
+  <circle cx="506" cy="278" r="15" fill="#0055a8" fill-opacity=".72"/>
+  <text x="450" y="462" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#0f172a">RO-TEA</text>
+  <text x="450" y="502" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#64748b">Slika proizvoda uskoro</text>
+</svg>

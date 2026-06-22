@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CatalogClient } from "@/components/CatalogClient";
-import { categories, getCategoryBySlug, getProductsByCategory } from "@/lib/products";
+import { brands, categories, getCategoryBySlug, getProductsByCategory } from "@/lib/products";
 
 export function generateStaticParams() {
   return categories.map((category) => ({ slug: category.slug }));
@@ -41,6 +41,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
           <p className="mt-4 text-lg leading-8 text-slate-600">{category.description}</p>
         </div>
         <CatalogClient
+          brands={brands}
           categories={categories}
           initialCategory={category.slug}
           products={categoryProducts}

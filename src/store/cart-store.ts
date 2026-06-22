@@ -30,6 +30,7 @@ export const useCartStore = create<CartState>()(
       addItem: (product, quantity = 1) =>
         set((state) => {
           const existing = state.items.find((item) => item.productId === product.id);
+          const maxQuantity = product.stock ?? 99;
 
           if (existing) {
             return {
@@ -37,7 +38,7 @@ export const useCartStore = create<CartState>()(
                 item.productId === product.id
                   ? {
                       ...item,
-                      quantity: Math.min(item.quantity + quantity, product.stock),
+                      quantity: Math.min(item.quantity + quantity, maxQuantity),
                     }
                   : item,
               ),
@@ -45,7 +46,7 @@ export const useCartStore = create<CartState>()(
           }
 
           return {
-            items: [...state.items, toCartItem(product, Math.min(quantity, product.stock))],
+            items: [...state.items, toCartItem(product, Math.min(quantity, maxQuantity))],
           };
         }),
       updateQuantity: (productId, quantity) =>

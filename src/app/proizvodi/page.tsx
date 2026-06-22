@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { CatalogClient } from "@/components/CatalogClient";
-import { categories, products } from "@/lib/products";
+import { brands, categories, products } from "@/lib/products";
 
 export const metadata: Metadata = {
   title: "Proizvodi",
@@ -21,7 +21,7 @@ export default function ProductsPage() {
             nazivu.
           </p>
         </div>
-        <CatalogClient categories={categories} products={products} />
+        <CatalogClient brands={brands} categories={categories} products={products} />
       </div>
     </div>
   );

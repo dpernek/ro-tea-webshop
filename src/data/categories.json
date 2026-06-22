@@ -1,50 +1,149 @@
 [
   {
-    "id": "cat-alati",
-    "slug": "alati",
-    "name": "Alati",
-    "description": "Pouzdani ručni i električni alati za radionicu, teren i svakodnevne zahvate.",
-    "image": "/categories/alati.webp",
-    "featured": true
+    "id": "festa-alati",
+    "slug": "festa-alati",
+    "name": "Festa",
+    "description": "Proizvodi u kategoriji Festa.",
+    "count": 661
   },
   {
-    "id": "cat-elektro-materijal",
-    "slug": "elektro-materijal",
-    "name": "Elektro materijal",
-    "description": "Instalacijska oprema, zaštita, kablovi i pribor za sigurne elektro radove.",
-    "image": "/categories/elektro-materijal.webp",
-    "featured": true
+    "id": "gradevinski-alati",
+    "slug": "gradevinski-alati",
+    "name": "Građevinski alati",
+    "description": "Proizvodi u kategoriji Građevinski alati.",
+    "count": 305
   },
   {
-    "id": "cat-rasvjeta",
-    "slug": "rasvjeta",
-    "name": "Rasvjeta",
-    "description": "LED paneli, reflektori i tehnička rasvjeta za dom, ured i poslovne prostore.",
-    "image": "/categories/rasvjeta.webp",
-    "featured": true
+    "id": "alati-za-radionice",
+    "slug": "alati-za-radionice",
+    "name": "Alati za radionice",
+    "description": "Proizvodi u kategoriji Alati za radionice.",
+    "count": 304
   },
   {
-    "id": "cat-vodoinstalacije",
-    "slug": "vodoinstalacije",
-    "name": "Vodoinstalacije",
-    "description": "Armature, ventili, spojni elementi i oprema za uredne vodoinstalacijske sustave.",
-    "image": "/categories/vodoinstalacije.webp",
-    "featured": true
+    "id": "vrtni-alati",
+    "slug": "vrtni-alati",
+    "name": "Vrtni alati",
+    "description": "Proizvodi u kategoriji Vrtni alati.",
+    "count": 191
   },
   {
-    "id": "cat-oprema-za-dom",
-    "slug": "oprema-za-dom",
-    "name": "Oprema za dom",
-    "description": "Praktična oprema za održavanje, organizaciju i tehničku sigurnost doma.",
-    "image": "/categories/oprema-za-dom.webp",
-    "featured": true
+    "id": "pferd-alati",
+    "slug": "pferd-alati",
+    "name": "Pferd",
+    "description": "Proizvodi u kategoriji Pferd.",
+    "count": 129
   },
   {
-    "id": "cat-pametna-kuca",
-    "slug": "pametna-kuca",
-    "name": "Pametna kuća",
-    "description": "Pametni prekidači, senzori, termostati i oprema za modernu automatizaciju.",
-    "image": "/categories/pametna-kuca.webp",
-    "featured": true
+    "id": "elektricni-alat-festa",
+    "slug": "elektricni-alat-festa",
+    "name": "Električni alat",
+    "description": "Proizvodi u kategoriji Električni alat.",
+    "count": 62
+  },
+  {
+    "id": "metabo-alati",
+    "slug": "metabo-alati",
+    "name": "Metabo",
+    "description": "Proizvodi u kategoriji Metabo.",
+    "count": 54
+  },
+  {
+    "id": "turpije",
+    "slug": "turpije",
+    "name": "Turpije",
+    "description": "Proizvodi u kategoriji Turpije.",
+    "count": 41
+  },
+  {
+    "id": "roto-glodala",
+    "slug": "roto-glodala",
+    "name": "Roto glodala",
+    "description": "Proizvodi u kategoriji Roto glodala.",
+    "count": 35
+  },
+  {
+    "id": "elektricni-alat",
+    "slug": "elektricni-alat",
+    "name": "Električni Alat",
+    "description": "Proizvodi u kategoriji Električni Alat.",
+    "count": 33
+  },
+  {
+    "id": "rezne_brusne_diskovi",
+    "slug": "rezne_brusne_diskovi",
+    "name": "Rezne, brusne ploče i diskovi",
+    "description": "Proizvodi u kategoriji Rezne, brusne ploče i diskovi.",
+    "count": 24
+  },
+  {
+    "id": "baterijski-alat",
+    "slug": "baterijski-alat",
+    "name": "Baterijski Alat",
+    "description": "Proizvodi u kategoriji Baterijski Alat.",
+    "count": 22
+  },
+  {
+    "id": "brusilice",
+    "slug": "brusilice",
+    "name": "Brusilice",
+    "description": "Proizvodi u kategoriji Brusilice.",
+    "count": 22
+  },
+  {
+    "id": "pferd_pogonski_strojevi",
+    "slug": "pferd_pogonski_strojevi",
+    "name": "PFERD pogonski strojevi",
+    "description": "Proizvodi u kategoriji PFERD pogonski strojevi.",
+    "count": 19
+  },
+  {
+    "id": "brusnje_poliranje",
+    "slug": "brusnje_poliranje",
+    "name": "Brušenje i poliranje",
+    "description": "Proizvodi u kategoriji Brušenje i poliranje.",
+    "count": 14
+  },
+  {
+    "id": "mjerni-uredaji",
+    "slug": "mjerni-uredaji",
+    "name": "Mjerni uređaji",
+    "description": "Proizvodi u kategoriji Mjerni uređaji.",
+    "count": 13
+  },
+  {
+    "id": "busilice",
+    "slug": "busilice",
+    "name": "Bušilice",
+    "description": "Proizvodi u kategoriji Bušilice.",
+    "count": 5
+  },
+  {
+    "id": "svrdla",
+    "slug": "svrdla",
+    "name": "Svrdla",
+    "description": "Proizvodi u kategoriji Svrdla.",
+    "count": 5
+  },
+  {
+    "id": "cetke",
+    "slug": "cetke",
+    "name": "Četke",
+    "description": "Proizvodi u kategoriji Četke.",
+    "count": 3
+  },
+  {
+    "id": "zastitna-oprema-delta-plus",
+    "slug": "zastitna-oprema-delta-plus",
+    "name": "Zaštitna Oprema",
+    "description": "Proizvodi u kategoriji Zaštitna Oprema.",
+    "count": 3
+  },
+  {
+    "id": "pribor",
+    "slug": "pribor",
+    "name": "Pribor",
+    "description": "Proizvodi u kategoriji Pribor.",
+    "count": 1
   }
 ]

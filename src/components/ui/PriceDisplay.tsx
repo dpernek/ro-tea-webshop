@@ -18,9 +18,9 @@ export function PriceDisplay({
   return (
     <div className="flex flex-wrap items-baseline gap-3">
       <span className={`${sizeClass} font-semibold tracking-normal text-slate-950`}>
-        {formatPrice(price)}
+        {price > 0 ? formatPrice(price) : "Cijena na upit"}
       </span>
-      {oldPrice ? (
+      {price > 0 && oldPrice ? (
         <span className="text-sm font-medium text-slate-400 line-through">
           {formatPrice(oldPrice)}
         </span>
