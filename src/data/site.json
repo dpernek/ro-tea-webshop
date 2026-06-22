@@ -1,0 +1,25 @@
+{
+  "brand": {
+    "name": "RO-TEA",
+    "tagline": "Tehnička oprema za dom, radionicu i poslovne prostore",
+    "primaryColor": "#0055a8"
+  },
+  "contact": {
+    "email": "info@ro-tea.hr",
+    "phone": "+385 1 555 0140",
+    "address": "Industrijska 12, 10000 Zagreb",
+    "hours": "Pon - Pet, 08:00 - 17:00"
+  },
+  "benefits": [
+    "Provjerena tehnička oprema",
+    "Brza priprema narudžbe",
+    "Podrška za B2C i B2B kupce",
+    "Jednostavan hrvatski checkout"
+  ],
+  "navigation": [
+    { "label": "Početna", "href": "/" },
+    { "label": "Proizvodi", "href": "/proizvodi" },
+    { "label": "O nama", "href": "/o-nama" },
+    { "label": "Kontakt", "href": "/kontakt" }
+  ]
+}

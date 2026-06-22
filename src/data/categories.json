@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cat-alati",
+    "slug": "alati",
+    "name": "Alati",
+    "description": "Pouzdani ručni i električni alati za radionicu, teren i svakodnevne zahvate.",
+    "image": "/categories/alati.webp",
+    "featured": true
+  },
+  {
+    "id": "cat-elektro-materijal",
+    "slug": "elektro-materijal",
+    "name": "Elektro materijal",
+    "description": "Instalacijska oprema, zaštita, kablovi i pribor za sigurne elektro radove.",
+    "image": "/categories/elektro-materijal.webp",
+    "featured": true
+  },
+  {
+    "id": "cat-rasvjeta",
+    "slug": "rasvjeta",
+    "name": "Rasvjeta",
+    "description": "LED paneli, reflektori i tehnička rasvjeta za dom, ured i poslovne prostore.",
+    "image": "/categories/rasvjeta.webp",
+    "featured": true
+  },
+  {
+    "id": "cat-vodoinstalacije",
+    "slug": "vodoinstalacije",
+    "name": "Vodoinstalacije",
+    "description": "Armature, ventili, spojni elementi i oprema za uredne vodoinstalacijske sustave.",
+    "image": "/categories/vodoinstalacije.webp",
+    "featured": true
+  },
+  {
+    "id": "cat-oprema-za-dom",
+    "slug": "oprema-za-dom",
+    "name": "Oprema za dom",
+    "description": "Praktična oprema za održavanje, organizaciju i tehničku sigurnost doma.",
+    "image": "/categories/oprema-za-dom.webp",
+    "featured": true
+  },
+  {
+    "id": "cat-pametna-kuca",
+    "slug": "pametna-kuca",
+    "name": "Pametna kuća",
+    "description": "Pametni prekidači, senzori, termostati i oprema za modernu automatizaciju.",
+    "image": "/categories/pametna-kuca.webp",
+    "featured": true
+  }
+]
