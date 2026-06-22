@@ -53,7 +53,7 @@ vercel
 vercel --prod
 ```
 
-Deployment URL: bit će upisan ovdje nakon uspješnog Vercel deploya.
+Deployment URL: https://ro-tea-webshop.vercel.app
 
 ## GitHub deploy koraci
 
